@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.mybatis.example.User">
+    <resultMap id="userMap" type="org.example.domain.User">
+        <!-- 当数据库的属性名和自定义类的属性名不一致时使用-->
+        <id property="id" column="uid"/>
+        <result property="name" column="uname"/>
+    </resultMap>
+    <select id="selectUser" parameterType="String" resultMap="userMap">
+        select *
+        from user
+        where uname=#{name}
+    </select>
+    <select id="selectall" resultMap="userMap">
+        select *
+        from user
+    </select>
+    <insert id="insert" parameterType="org.example.domain.User">
+        insert into user(uname)
+        values (#{name})
+    </insert>
+    <update id="update" parameterType="org.example.domain.User">
+        update user
+        set uname=#{name}
+        where uid = #{id}
+    </update>
+<delete id="delete" parameterType="org.example.domain.User">
+    delete  from user where uid=#{id}
+</delete>
+
+</mapper>
