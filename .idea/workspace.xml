@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="996d60b3-e11c-4de3-b56c-7797630e86ea" name="变更" comment="新增mybatis的sql标签的初步使用&#10;新增if标签 的使用&#10;💥if标签里面的判空语句为test=&quot;x!=null and x!='' &quot; (中间没有空格)&#10;新增where标签的使用 （自动管理where 后  的and问题）" />
+    <list default="true" id="996d60b3-e11c-4de3-b56c-7797630e86ea" name="变更" comment="新增mybatis的sql标签的初步使用&#10;新增if标签 的使用&#10;💥if标签里面的判空语句为test=&quot;x!=null and x!='' &quot; (中间没有空格)&#10;新增where标签的使用 （自动管理where 后  的and问题）">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Sqlsession.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Sqlsession.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestSecondDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestSecondDemo.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,7 +54,7 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected="JUnit.TestSecondDemo.selectifTableSql">
+  <component name="RunManager" selected="JUnit.TestSecondDemo.update1">
     <configuration name="TestFirstDemo.SelectAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MyBatisStudyCode" />
       <option name="PACKAGE_NAME" value="" />
@@ -70,26 +75,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestFirstDemo.insert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="MyBatisStudyCode" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestFirstDemo" />
-      <option name="METHOD_NAME" value="insert" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestFirstDemo.update" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="MyBatisStudyCode" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestFirstDemo" />
-      <option name="METHOD_NAME" value="update" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="TestSecondDemo.selectifTableSql" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MyBatisStudyCode" />
       <option name="PACKAGE_NAME" value="" />
@@ -100,13 +85,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestSecondDemo.update" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MyBatisStudyCode" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestSecondDemo" />
+      <option name="METHOD_NAME" value="update" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestSecondDemo.update1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MyBatisStudyCode" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestSecondDemo" />
+      <option name="METHOD_NAME" value="update1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestSecondDemo.update1" />
+        <item itemvalue="JUnit.TestSecondDemo.update" />
         <item itemvalue="JUnit.TestSecondDemo.selectifTableSql" />
         <item itemvalue="JUnit.TestFirstDemo.delete" />
         <item itemvalue="JUnit.TestFirstDemo.SelectAll" />
-        <item itemvalue="JUnit.TestFirstDemo.update" />
-        <item itemvalue="JUnit.TestFirstDemo.insert" />
       </list>
     </recent_temporary>
   </component>
@@ -126,7 +131,7 @@
       <workItem from="1666266134231" duration="69000" />
       <workItem from="1666607881744" duration="9049000" />
       <workItem from="1666619651594" duration="2848000" />
-      <workItem from="1666774939017" duration="5324000" />
+      <workItem from="1666774939017" duration="6987000" />
     </task>
     <task id="LOCAL-00001" summary="新增mybatis的sqlsession方法 （对数据库的增删改查）">
       <created>1666621736356</created>
@@ -163,7 +168,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666780265267</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="新增mybatis的sql标签的初步使用&#10;新增if标签 的使用&#10;💥if标签里面的判空语句为test=&quot;x!=null and x!='' &quot; (中间没有空格)&#10;新增where标签的使用 （自动管理where 后  的and问题）">
+      <created>1666780278562</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1666780278562</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

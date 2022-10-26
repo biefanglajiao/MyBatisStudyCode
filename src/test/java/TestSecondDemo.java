@@ -29,11 +29,35 @@ public class TestSecondDemo {
         User user2=sqlSession.selectOne("ifTableSelect1",user);
         User user3=sqlSession.selectOne("ifTableSelect2",user);
         User user4=sqlSession.selectOne("WhereTableSelect",user);
+        User user5=sqlSession.selectOne("trimTableSelect",user);
 
         System.out.println("user1:  "+user1);
         System.out.println("user2:  "+user2);
   System.out.println("user3:  "+user3);
         System.out.println("user4:  "+user4);
+        System.out.println("user5:  "+user5);
+    }
+    @Test
+    public  void  update(){
+        User user=new User();
+        user.setName("常兆海");
+        user.setId(7);
+
+        int update = sqlSession.update("setupdate", user);
+        User user1=sqlSession.selectOne("sqlTableSelect",user);
+        System.out.println("成功更新"+update+"条数据：为：  "+user1);
+        sqlSession.commit();
+    }
+    @Test
+    public  void  update1(){
+        User user=new User();
+        user.setName("常兆海6");
+        user.setId(6);
+
+        int update = sqlSession.update("tirmupdate", user);
+        User user1=sqlSession.selectOne("sqlTableSelect",user);
+        System.out.println("成功更新"+update+"条数据：为：  "+user1);
+        sqlSession.commit();
     }
     @After
     public  void  close(){

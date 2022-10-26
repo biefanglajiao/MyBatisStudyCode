@@ -33,7 +33,13 @@
         where uid = #{id}
     </delete>
     <!--  sql元素的使用： 提高代码片段复用率 -->
-    <sql id="11">uid =  #{id}  and   uname  =  #{name}</sql>
+    <sql id="11">uid
+    =
+    #{id}
+    and
+    uname
+    =
+    #{name}</sql>
     <select id="sqlTableSelect" parameterType="org.example.domain.User" resultMap="userMap">
         select * from user where
         <include refid="11"></include>               <!--等价于  uid=#{id} and uname=#{name}  -->
@@ -41,35 +47,70 @@
     <!-- if 标签的使用   💥：where子句后and对应  if标签的  and  （第一个前没有；有会报错）-->
     <select id="ifTableSelect1" parameterType="org.example.domain.User" resultMap="userMap">
         select * from user where
-<if test="id!=null and id!='' ">
-    uid=#{id}
-</if>
+        <if test="id!=null and id!='' ">
+            uid=#{id}
+        </if>
     </select>
     <select id="ifTableSelect2" parameterType="org.example.domain.User" resultMap="userMap">
         select * from user where 1=1
-        <if test="id!=null and id!='' ">
-           and uid=#{id}
-        </if>
-        <if test="name!=null and name!='' ">
-        and uname=#{name}
-        </if>
-                <!---判空条件为!=null和name!=''      单引号里面不嫩有空格     -->
-    </select>
-    <select id="WhereTableSelect" parameterType="org.example.domain.User" resultMap="userMap">
-        select * from user
-        <where>
         <if test="id!=null and id!='' ">
             and uid=#{id}
         </if>
         <if test="name!=null and name!='' ">
             and uname=#{name}
         </if>
-        <!---使用where标签时 就不用1=1这种危险的格式；标签会帮你处理and留还是不留   -->
-
-        </where>
-
+        <!---判空条件为!=null和name!=''      单引号里面不嫩有空格     -->
     </select>
-
+    <select id="WhereTableSelect" parameterType="org.example.domain.User" resultMap="userMap">
+        select * from user
+        <where>
+            <if test="id!=null and id!='' ">
+                and uid=#{id}
+            </if>
+            <if test="name!=null and name!='' ">
+                and uname=#{name}
+            </if>
+            <!---使用where标签时 就不用1=1这种危险的格式；标签会帮你处理and留还是不留   -->
+        </where>
+    </select>
+    <select id="trimTableSelect" parameterType="org.example.domain.User" resultMap="userMap">
+        select * from user
+        <trim prefix="where" prefixOverrides="and">
+            <if test="id!=null and id!='' ">
+                and uid=#{id}
+            </if>
+            <if test="name!=null and name!='' ">
+                and uname=#{name}
+            </if>
+            <!---使用where标签时 就不用1=1这种危险的格式；标签会帮你处理and留还是不留   -->
+        </trim>
+    </select>
+    <update id="setupdate" parameterType="org.example.domain.User">
+        update user
+        <set>
+            <if test="name!=null and name!=''">
+                uname=#{name}
+            </if>
+            <where>
+                <if test="id!=null and id!='' ">
+                    uid=#{id}
+                </if>
+            </where>
+        </set>
+    </update>
+    <update id="tirmupdate" parameterType="org.example.domain.User">
+        update user
+        <trim prefix="set" prefixOverrides=","><!---如果有多个set 中间分割用 ","-->
+            <if test="name!=null and name!=''">
+                uname=#{name}
+            </if>
+            <where>
+                <if test="id!=null and id!='' ">
+                    uid=#{id}
+                </if>
+            </where>
+        </trim>
+    </update>
 
 
 </mapper>

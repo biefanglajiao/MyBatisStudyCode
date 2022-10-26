@@ -20,7 +20,8 @@ public class Sqlsession {
        SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(reader);
      sqlSession=sqlSessionFactory.openSession();
         } catch (IOException e) {
-            throw new RuntimeException(e);
+
+            sqlSession.rollback();
         }
     }
 
