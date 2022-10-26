@@ -16,3 +16,5 @@ int delete = sqlSession.delete("delete", <font color=red>user</font>);<br>
 <br>会报传入数据类型错误
 ### 发现条件 ：
 <font color=yellow>插入数据是user对象中的name值为“aa”，但是插入后显示为user（说明插入的数据是字符串“user”而没有传入user对象的值）</font>
+## 关于if标签报 Cause: java.lang.NumberFormatException: For input string: "xxxx"
+💥if标签里面的判空语句为test="x!=null and x!='' " (中间没有空格)

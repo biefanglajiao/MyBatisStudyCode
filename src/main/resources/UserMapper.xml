@@ -32,10 +32,44 @@
         from user
         where uid = #{id}
     </delete>
-    <!--  sql元素的使用： 提高嗲马片段复用率 -->
+    <!--  sql元素的使用： 提高代码片段复用率 -->
     <sql id="11">uid =  #{id}  and   uname  =  #{name}</sql>
-    <select id="ifTableSelect" parameterType="org.example.domain.User" resultMap="userMap">
+    <select id="sqlTableSelect" parameterType="org.example.domain.User" resultMap="userMap">
         select * from user where
         <include refid="11"></include>               <!--等价于  uid=#{id} and uname=#{name}  -->
     </select>
+    <!-- if 标签的使用   💥：where子句后and对应  if标签的  and  （第一个前没有；有会报错）-->
+    <select id="ifTableSelect1" parameterType="org.example.domain.User" resultMap="userMap">
+        select * from user where
+<if test="id!=null and id!='' ">
+    uid=#{id}
+</if>
+    </select>
+    <select id="ifTableSelect2" parameterType="org.example.domain.User" resultMap="userMap">
+        select * from user where 1=1
+        <if test="id!=null and id!='' ">
+           and uid=#{id}
+        </if>
+        <if test="name!=null and name!='' ">
+        and uname=#{name}
+        </if>
+                <!---判空条件为!=null和name!=''      单引号里面不嫩有空格     -->
+    </select>
+    <select id="WhereTableSelect" parameterType="org.example.domain.User" resultMap="userMap">
+        select * from user
+        <where>
+        <if test="id!=null and id!='' ">
+            and uid=#{id}
+        </if>
+        <if test="name!=null and name!='' ">
+            and uname=#{name}
+        </if>
+        <!---使用where标签时 就不用1=1这种危险的格式；标签会帮你处理and留还是不留   -->
+
+        </where>
+
+    </select>
+
+
+
 </mapper>

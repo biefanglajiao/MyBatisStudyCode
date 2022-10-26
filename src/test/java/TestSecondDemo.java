@@ -25,8 +25,15 @@ public class TestSecondDemo {
 
         user.setId(7);
         user.setName("czhd");
-        User user1=sqlSession.selectOne("ifTableSelect",user);
-        System.out.println(user1);
+        User user1=sqlSession.selectOne("sqlTableSelect",user);
+        User user2=sqlSession.selectOne("ifTableSelect1",user);
+        User user3=sqlSession.selectOne("ifTableSelect2",user);
+        User user4=sqlSession.selectOne("WhereTableSelect",user);
+
+        System.out.println("user1:  "+user1);
+        System.out.println("user2:  "+user2);
+  System.out.println("user3:  "+user3);
+        System.out.println("user4:  "+user4);
     }
     @After
     public  void  close(){
