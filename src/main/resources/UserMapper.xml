@@ -111,15 +111,33 @@
             </where>
         </trim>
     </update>
-    <select id="foreacheSelect" parameterType="org.example.domain.User" resultMap="userMap">
+    <select id="foreacheSelectShuzu" parameterType="org.example.domain.User" resultMap="userMap">
         select * from user
         <where>
-uid in
-           <foreach item="id" index="index" collection="array" open="(" separator="," close=")">
-               #{id}
-           </foreach>
+            uid in
+            <foreach item="id" collection="array" open="(" separator="," close=")">
+                #{id}
+            </foreach>
         </where>
     </select>
-
+    <select id="foreacheSelectlist" parameterType="org.example.domain.User" resultMap="userMap">
+        select * from user
+        <where>
+            uid in
+            <foreach item="id"  collection="list" open="(" separator="," close=")">
+                #{id}
+            </foreach>
+        </where>
+    </select>
+    <select id="foreacheSelectMap" parameterType="org.example.domain.User" resultMap="userMap">
+        select * from user
+        <where>
+            uid in
+            <foreach item="id" collection="ids" open="(" separator="," close=")">
+                #{id}
+            </foreach>
+        </where>
+    </select>
+    <!--- index没啥用 item就是#{} collection只有map类写对应map类的key值-->
 
 </mapper>

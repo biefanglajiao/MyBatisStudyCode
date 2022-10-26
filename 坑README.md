@@ -18,3 +18,8 @@ int delete = sqlSession.delete("delete", <font color=red>user</font>);<br>
 <font color=yellow>插入数据是user对象中的name值为“aa”，但是插入后显示为user（说明插入的数据是字符串“user”而没有传入user对象的值）</font>
 ## 关于if标签报 Cause: java.lang.NumberFormatException: For input string: "xxxx"
 💥if标签里面的判空语句为test="x!=null and x!='' " (中间没有空格)
+## 关于foreach的一些
+·<font color=red>item</font>必须要有对应着结构中的  <font color=red>#{}</font>
+ <br>·<font color=red>collection</font>:中<br>
+数组对应array；集合对应list；map对应map对象名。<br>
+<font color=red>index</font>:未知🕐

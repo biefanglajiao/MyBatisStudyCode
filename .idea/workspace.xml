@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="996d60b3-e11c-4de3-b56c-7797630e86ea" name="变更" comment="新增mybatis的trim,set,以及trim元素更新  的操作&#10;💥使用set做更新时 ，传入数据不可为空，会使整个sql语句报错">
+    <list default="true" id="996d60b3-e11c-4de3-b56c-7797630e86ea" name="变更" comment="新增mybatis 的foreach循坏遍历查找&#10;💥foeeach标签里的元素有点多 得记住">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/domain/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/UserMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TestSecondDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestSecondDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/坑README.md" beforeDir="false" afterPath="$PROJECT_DIR$/坑README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +133,7 @@
       <workItem from="1666607881744" duration="9049000" />
       <workItem from="1666619651594" duration="2848000" />
       <workItem from="1666774939017" duration="7177000" />
-      <workItem from="1666782507763" duration="457000" />
+      <workItem from="1666782507763" duration="5174000" />
     </task>
     <task id="LOCAL-00001" summary="新增mybatis的sqlsession方法 （对数据库的增删改查）">
       <created>1666621736356</created>
@@ -182,7 +184,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666782097720</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="新增mybatis 的foreach循坏遍历查找&#10;💥foeeach标签里的元素有点多 得记住">
+      <created>1666783034965</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1666783034965</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,14 +213,15 @@
     <MESSAGE value="新增mybatis的sql标签的初步使用&#10;新增代码复用率提升的两种方法；写工具类方法；注释提升复用率（sql标签也是提升方法）" />
     <MESSAGE value="新增mybatis的sql标签的初步使用&#10;新增if标签 的使用&#10;if标签里面的判空语句为test=&quot;x!=null and x!='' &quot; (中间没有空格)&#10;新增where标签的使用 （自动管理where 后  的and问题）" />
     <MESSAGE value="新增mybatis的trim,set,以及trim元素更新  的操作&#10;使用set做更新时 ，传入数据不可为空，会使整个sql语句报错" />
-    <option name="LAST_COMMIT_MESSAGE" value="新增mybatis的trim,set,以及trim元素更新  的操作&#10;使用set做更新时 ，传入数据不可为空，会使整个sql语句报错" />
+    <MESSAGE value="新增mybatis 的foreach循坏遍历查找&#10;foeeach标签里的元素有点多 得记住" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增mybatis 的foreach循坏遍历查找&#10;foeeach标签里的元素有点多 得记住" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/TestSecondDemo.java</url>
-          <line>24</line>
+          <line>27</line>
           <properties class="TestSecondDemo" method="selectifTableSql">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />

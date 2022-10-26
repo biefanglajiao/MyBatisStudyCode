@@ -5,7 +5,10 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class TestSecondDemo {
     /***
@@ -63,11 +66,34 @@ public class TestSecondDemo {
     }
     @Test
     public void foeeachselect(){
+        System.out.println("array:");
         Integer[] integers={1,3,5};
-        List<User> foreacheSelect = sqlSession.selectList("foreacheSelect", integers);
-        for (User user : foreacheSelect) {
+        List<User> foreacheSelectShuzu = sqlSession.selectList("foreacheSelectShuzu", integers);
+        for (User user : foreacheSelectShuzu) {
             System.out.println(user);
         }
+        System.out.println("list：");
+        List<Integer> arr =new ArrayList<>();
+        arr.add(1);
+        arr.add(3);
+        arr.add(5);
+
+        List<User> foreacheSelectList = sqlSession.selectList("foreacheSelectlist", arr);
+        for (User user : foreacheSelectList) {
+            System.out.println(user);
+        }
+        System.out.println("map：");
+        List<Integer> arr1 =new ArrayList<>();
+        arr1.add(1);
+        arr1.add(3);
+        arr1.add(5);
+        Map map=new HashMap<>();
+        map.put("ids",arr1);
+        List<User> foreacheSelectMap = sqlSession.selectList("foreacheSelectMap", map);
+        for (User user : foreacheSelectMap) {
+            System.out.println(user);
+        }
+
     }
     @After
     public  void  close(){
