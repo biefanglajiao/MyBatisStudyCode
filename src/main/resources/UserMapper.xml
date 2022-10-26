@@ -11,7 +11,7 @@
     <select id="selectUser" parameterType="String" resultMap="userMap">
         select *
         from user
-        where uname=#{name}
+        where uname = #{name}
     </select>
     <select id="selectall" resultMap="userMap">
         select *
@@ -26,8 +26,16 @@
         set uname=#{name}
         where uid = #{id}
     </update>
-<delete id="delete" parameterType="org.example.domain.User">
-    delete  from user where uid=#{id}
-</delete>
-
+    <!-- 删除元素-->
+    <delete id="delete" parameterType="org.example.domain.User">
+        delete
+        from user
+        where uid = #{id}
+    </delete>
+    <!--  sql元素的使用： 提高嗲马片段复用率 -->
+    <sql id="11">uid =  #{id}  and   uname  =  #{name}</sql>
+    <select id="ifTableSelect" parameterType="org.example.domain.User" resultMap="userMap">
+        select * from user where
+        <include refid="11"></include>               <!--等价于  uid=#{id} and uname=#{name}  -->
+    </select>
 </mapper>

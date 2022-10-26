@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="996d60b3-e11c-4de3-b56c-7797630e86ea" name="变更" comment="新增mybatis的sqlsession方法 （对数据库的增删改查）" />
+    <list default="true" id="996d60b3-e11c-4de3-b56c-7797630e86ea" name="变更" comment="新增mybatis的sqlsession方法 （对数据库的增删改查）">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/UserMapper.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,7 +25,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2GITs34KUcNxSyEdPySdZY72fhI" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="false" />
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -47,7 +52,7 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected="JUnit.TestFirstDemo.delete">
+  <component name="RunManager" selected="JUnit.TestSecondDemo.selectifTableSql">
     <configuration name="TestFirstDemo.SelectAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MyBatisStudyCode" />
       <option name="PACKAGE_NAME" value="" />
@@ -63,16 +68,6 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TestFirstDemo" />
       <option name="METHOD_NAME" value="delete" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestFirstDemo.firstTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="MyBatisStudyCode" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestFirstDemo" />
-      <option name="METHOD_NAME" value="firstTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -98,13 +93,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestSecondDemo.selectifTableSql" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MyBatisStudyCode" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestSecondDemo" />
+      <option name="METHOD_NAME" value="selectifTableSql" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestSecondDemo.selectifTableSql" />
         <item itemvalue="JUnit.TestFirstDemo.delete" />
         <item itemvalue="JUnit.TestFirstDemo.SelectAll" />
         <item itemvalue="JUnit.TestFirstDemo.update" />
         <item itemvalue="JUnit.TestFirstDemo.insert" />
-        <item itemvalue="JUnit.TestFirstDemo.firstTest" />
       </list>
     </recent_temporary>
   </component>
@@ -123,7 +128,8 @@
       <workItem from="1666241799226" duration="600000" />
       <workItem from="1666266134231" duration="69000" />
       <workItem from="1666607881744" duration="9049000" />
-      <workItem from="1666619651594" duration="2730000" />
+      <workItem from="1666619651594" duration="2848000" />
+      <workItem from="1666774939017" duration="3107000" />
     </task>
     <task id="LOCAL-00001" summary="新增mybatis的sqlsession方法 （对数据库的增删改查）">
       <created>1666621736356</created>
@@ -139,7 +145,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666621746368</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="新增mybatis的sqlsession方法 （对数据库的增删改查）">
+      <created>1666622760976</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1666622760976</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,6 +172,21 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="新增mybatis的sqlsession方法 （对数据库的增删改查）" />
     <option name="LAST_COMMIT_MESSAGE" value="新增mybatis的sqlsession方法 （对数据库的增删改查）" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/TestSecondDemo.java</url>
+          <line>22</line>
+          <properties class="TestSecondDemo" method="selectifTableSql">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
