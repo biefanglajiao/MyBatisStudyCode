@@ -23,3 +23,6 @@ int delete = sqlSession.delete("delete", <font color=red>user</font>);<br>
  <br>·<font color=red>collection</font>:中<br>
 数组对应array；集合对应list；map对应map对象名。<br>
 <font color=red>index</font>:未知🕐
+## 关于重写tostring
+object类里的toString只是把字符串的直接打印，数字的要转化成字符再打印，<font color=red>而对象，则直接打印该对象的hash码</font><br>
+只有重写后才能在sout语句中看到想要的格式的结果
