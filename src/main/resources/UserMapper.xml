@@ -111,6 +111,15 @@
             </where>
         </trim>
     </update>
+    <select id="foreacheSelect" parameterType="org.example.domain.User" resultMap="userMap">
+        select * from user
+        <where>
+uid in
+           <foreach item="id" index="index" collection="array" open="(" separator="," close=")">
+               #{id}
+           </foreach>
+        </where>
+    </select>
 
 
 </mapper>

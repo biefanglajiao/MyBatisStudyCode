@@ -5,6 +5,8 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.List;
+
 public class TestSecondDemo {
     /***
      * 在所有程序的运行中；我们发现程序要经历创建，运行，结束 三个过程
@@ -58,6 +60,14 @@ public class TestSecondDemo {
         User user1=sqlSession.selectOne("sqlTableSelect",user);
         System.out.println("成功更新"+update+"条数据：为：  "+user1);
         sqlSession.commit();
+    }
+    @Test
+    public void foeeachselect(){
+        Integer[] integers={1,3,5};
+        List<User> foreacheSelect = sqlSession.selectList("foreacheSelect", integers);
+        for (User user : foreacheSelect) {
+            System.out.println(user);
+        }
     }
     @After
     public  void  close(){
