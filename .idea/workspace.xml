@@ -5,6 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="996d60b3-e11c-4de3-b56c-7797630e86ea" name="变更" comment="新增mybatis 的foreach循坏遍历查找&#10;💥foeeach标签里的元素有点多 得记住对应在坑md">
+      <change afterPath="$PROJECT_DIR$/src/test/java/textDi4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c703c95b-959c-4c14-95a4-7510e39508d9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c703c95b-959c-4c14-95a4-7510e39508d9.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/坑README.md" beforeDir="false" afterPath="$PROJECT_DIR$/坑README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -15,8 +20,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Tag Library Descriptor" />
         <option value="Class" />
+        <option value="Tag Library Descriptor" />
       </list>
     </option>
   </component>
@@ -51,12 +56,18 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected="JUnit.TestSecondDemo.foeeachselect">
-    <configuration name="TestFirstDemo.delete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\JAVA\学习代码\MyBatisStudyCode\src\main\resources" />
+      <recent name="D:\JAVA\学习代码\MyBatisStudyCode\src\main\java\org\example\yiduiyi" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.textDi4.yiduiyi1">
+    <configuration name="TestFirstDemo.SelectAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MyBatisStudyCode" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TestFirstDemo" />
-      <option name="METHOD_NAME" value="delete" />
+      <option name="METHOD_NAME" value="SelectAll" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -72,26 +83,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestSecondDemo.selectifTableSql" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="MyBatisStudyCode" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestSecondDemo" />
-      <option name="METHOD_NAME" value="selectifTableSql" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestSecondDemo.update" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="MyBatisStudyCode" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestSecondDemo" />
-      <option name="METHOD_NAME" value="update" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="TestSecondDemo.update1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MyBatisStudyCode" />
       <option name="PACKAGE_NAME" value="" />
@@ -102,13 +93,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="textDi4.yiduiyi" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MyBatisStudyCode" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="textDi4" />
+      <option name="METHOD_NAME" value="yiduiyi" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="textDi4.yiduiyi1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MyBatisStudyCode" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="textDi4" />
+      <option name="METHOD_NAME" value="yiduiyi1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.textDi4.yiduiyi1" />
+        <item itemvalue="JUnit.textDi4.yiduiyi" />
+        <item itemvalue="JUnit.TestFirstDemo.SelectAll" />
         <item itemvalue="JUnit.TestSecondDemo.foeeachselect" />
         <item itemvalue="JUnit.TestSecondDemo.update1" />
-        <item itemvalue="JUnit.TestSecondDemo.update" />
-        <item itemvalue="JUnit.TestSecondDemo.selectifTableSql" />
-        <item itemvalue="JUnit.TestFirstDemo.delete" />
       </list>
     </recent_temporary>
   </component>
@@ -129,7 +140,13 @@
       <workItem from="1666607881744" duration="9049000" />
       <workItem from="1666619651594" duration="2848000" />
       <workItem from="1666774939017" duration="7177000" />
-      <workItem from="1666782507763" duration="5378000" />
+      <workItem from="1666782507763" duration="5444000" />
+      <workItem from="1667025853635" duration="288000" />
+      <workItem from="1667479312269" duration="663000" />
+      <workItem from="1667718837631" duration="1910000" />
+      <workItem from="1667740948176" duration="5703000" />
+      <workItem from="1667747105442" duration="20000" />
+      <workItem from="1667780665516" duration="8230000" />
     </task>
     <task id="LOCAL-00001" summary="新增mybatis的sqlsession方法 （对数据库的增删改查）">
       <created>1666621736356</created>
@@ -194,7 +211,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666789407917</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="新增mybatis 的foreach循坏遍历查找&#10;💥foeeach标签里的元素有点多 得记住对应在坑md">
+      <created>1666789570725</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1666789570725</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

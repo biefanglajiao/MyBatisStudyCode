@@ -4,6 +4,12 @@
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
     <properties resource="db.properties"/>
+    <settings>
+        <!--        打开延迟加载开关-->
+        <setting name="lazyLoadingEnabled" value="true"/>
+        <!--        将积极加载改为消息加载，即按需加载-->
+        <setting name="aggressiveLazyLoading" value="false"/>
+    </settings>
     <environments default="development">
         <environment id="development">
             <transactionManager type="JDBC"/>
@@ -15,7 +21,10 @@
             </dataSource>
         </environment>
     </environments>
+
     <mappers>
         <mapper resource="UserMapper.xml"/>
+        <mapper resource="cardMapper.xml"/>
+        <mapper resource="personMapper.xml"/>
     </mappers>
 </configuration>

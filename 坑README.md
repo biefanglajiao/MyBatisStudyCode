@@ -25,4 +25,10 @@ int delete = sqlSession.delete("delete", <font color=red>user</font>);<br>
 <font color=red>index</font>:未知🕐
 ## 关于重写tostring
 object类里的toString只是把字符串的直接打印，数字的要转化成字符再打印，<font color=red>而对象，则直接打印该对象的hash码</font><br>
-只有重写后才能在sout语句中看到想要的格式的结果
+只有重写后才能在sout语句中看到想要的格式的结果·1·
+
+## 文件中的实体类多的时候,在引用的时候 记得写入全类名
+## 数据库列创建时 要注意改写编码方式为utf-8不然无法输入中文
+## xml标签是有先后顺序的  比如：
+### <·configuration>中先后顺序必须为：
+(properties?,settings?,typeAliases?,typeHandlers?,objectFactory?,objectWrapperFactory?,reflectorFactory?,plugins?,environments?,databaseIdProvider?,mappers?)"
