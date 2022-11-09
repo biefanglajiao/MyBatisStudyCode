@@ -4,12 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="996d60b3-e11c-4de3-b56c-7797630e86ea" name="变更" comment="新增mybatis 的foreach循坏遍历查找&#10;💥foeeach标签里的元素有点多 得记住对应在坑md">
-      <change afterPath="$PROJECT_DIR$/src/test/java/textDi4.java" afterDir="false" />
+    <list default="true" id="996d60b3-e11c-4de3-b56c-7797630e86ea" name="变更" comment="新增mybatis 中级&#10;关联映射一对一">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/yiduiyi/Card.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/yiduiyi/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/cardMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/personMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/第四章 关联映射与缓存.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/c703c95b-959c-4c14-95a4-7510e39508d9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c703c95b-959c-4c14-95a4-7510e39508d9.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/UserMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/textDi4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/一对一/textDi4.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/坑README.md" beforeDir="false" afterPath="$PROJECT_DIR$/坑README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -20,8 +24,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Tag Library Descriptor" />
+        <option value="Python Script" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -43,12 +48,12 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/JAVA/学习代码/MyBatisStudyCode&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/PYTHON&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;项目&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.externalResources&quot;
+    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   },
   &quot;keyToStringList&quot;: {
     &quot;DatabaseDriversLRU&quot;: [
@@ -58,11 +63,12 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\JAVA\学习代码\MyBatisStudyCode" />
       <recent name="D:\JAVA\学习代码\MyBatisStudyCode\src\main\resources" />
       <recent name="D:\JAVA\学习代码\MyBatisStudyCode\src\main\java\org\example\yiduiyi" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.textDi4.yiduiyi1">
+  <component name="RunManager" selected="JUnit.Text.yiduiyi">
     <configuration name="TestFirstDemo.SelectAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MyBatisStudyCode" />
       <option name="PACKAGE_NAME" value="" />
@@ -83,11 +89,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestSecondDemo.update1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Text.yiduiyi" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MyBatisStudyCode" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestSecondDemo" />
-      <option name="METHOD_NAME" value="update1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="一对多.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="一对多" />
+      <option name="MAIN_CLASS_NAME" value="一对多.Text" />
+      <option name="METHOD_NAME" value="yiduiyi" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -95,8 +107,8 @@
     </configuration>
     <configuration name="textDi4.yiduiyi" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MyBatisStudyCode" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="textDi4" />
+      <option name="PACKAGE_NAME" value="一对一" />
+      <option name="MAIN_CLASS_NAME" value="一对一.textDi4" />
       <option name="METHOD_NAME" value="yiduiyi" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -105,8 +117,8 @@
     </configuration>
     <configuration name="textDi4.yiduiyi1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MyBatisStudyCode" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="textDi4" />
+      <option name="PACKAGE_NAME" value="一对一" />
+      <option name="MAIN_CLASS_NAME" value="一对一.textDi4" />
       <option name="METHOD_NAME" value="yiduiyi1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -115,11 +127,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Text.yiduiyi" />
         <item itemvalue="JUnit.textDi4.yiduiyi1" />
         <item itemvalue="JUnit.textDi4.yiduiyi" />
         <item itemvalue="JUnit.TestFirstDemo.SelectAll" />
         <item itemvalue="JUnit.TestSecondDemo.foeeachselect" />
-        <item itemvalue="JUnit.TestSecondDemo.update1" />
       </list>
     </recent_temporary>
   </component>
@@ -146,7 +158,16 @@
       <workItem from="1667718837631" duration="1910000" />
       <workItem from="1667740948176" duration="5703000" />
       <workItem from="1667747105442" duration="20000" />
-      <workItem from="1667780665516" duration="8230000" />
+      <workItem from="1667780665516" duration="8474000" />
+      <workItem from="1667804065319" duration="581000" />
+      <workItem from="1667815498127" duration="10000" />
+      <workItem from="1667893541558" duration="2461000" />
+      <workItem from="1667905469755" duration="199000" />
+      <workItem from="1667905682053" duration="85000" />
+      <workItem from="1667905859512" duration="5000" />
+      <workItem from="1667908642795" duration="6000" />
+      <workItem from="1667997982582" duration="168000" />
+      <workItem from="1667998234819" duration="5711000" />
     </task>
     <task id="LOCAL-00001" summary="新增mybatis的sqlsession方法 （对数据库的增删改查）">
       <created>1666621736356</created>
@@ -218,7 +239,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666789570725</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="新增mybatis 中级&#10;关联映射一对一">
+      <created>1667803343346</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1667803343346</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -242,7 +270,8 @@
     <MESSAGE value="新增mybatis的trim,set,以及trim元素更新  的操作&#10;使用set做更新时 ，传入数据不可为空，会使整个sql语句报错" />
     <MESSAGE value="新增mybatis 的foreach循坏遍历查找&#10;foeeach标签里的元素有点多 得记住" />
     <MESSAGE value="新增mybatis 的foreach循坏遍历查找&#10;foeeach标签里的元素有点多 得记住对应在坑md" />
-    <option name="LAST_COMMIT_MESSAGE" value="新增mybatis 的foreach循坏遍历查找&#10;foeeach标签里的元素有点多 得记住对应在坑md" />
+    <MESSAGE value="新增mybatis 中级&#10;关联映射一对一" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增mybatis 中级&#10;关联映射一对一" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
