@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="yiduiduoMapper.xml">
+    <resultMap id="orders" type="org.example.yiduiduo.Users">
+        <id property="id" column="uid"/>
+        <result property="name" column="uname"/>
+        <!--        一对多属性的关联-->
+        <collection property="orders" ofType="org.example.yiduiduo.Orders" javaType="list">
+            <!--            对应private List<Orders> orders;里的 属性和属性对应的泛型-->
+            <id property="id" column="id"/>
+            <result property="number" column="number"/>
+        </collection>
+    </resultMap>
+    <select id="findorders" resultMap="orders" parameterType="Integer">
+        SELECT * FROM tb_order,user
+        WHERE user.uid=tb_order.user_id AND user.uid=#{id}
+    </select>
+
+</mapper>
