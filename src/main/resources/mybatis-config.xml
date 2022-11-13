@@ -27,5 +27,7 @@
         <mapper resource="cardMapper.xml"/>
         <mapper resource="personMapper.xml"/>
         <mapper resource="yiduiduoMapper.xml"/>
+        <mapper resource="duoduiduoMapper1.xml"/>
+        <mapper resource="duoduiduoMapper2.xml"/>
     </mappers>
 </configuration>
