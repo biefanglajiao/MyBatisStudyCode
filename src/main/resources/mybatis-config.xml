@@ -9,6 +9,8 @@
         <setting name="lazyLoadingEnabled" value="true"/>
         <!--        将积极加载改为消息加载，即按需加载-->
         <setting name="aggressiveLazyLoading" value="false"/>
+
+
     </settings>
     <environments default="development">
         <environment id="development">
@@ -27,5 +29,7 @@
         <mapper resource="cardMapper.xml"/>
         <mapper resource="personMapper.xml"/>
         <mapper resource="yiduiduoMapper.xml"/>
+        <mapper resource="duoduiduoMapper1.xml"/>
+        <mapper resource="duoduiduoMapper2.xml"/>
     </mappers>
 </configuration>

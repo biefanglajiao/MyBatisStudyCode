@@ -9,6 +9,12 @@
         <id property="id" column="uid"/>
         <result property="name" column="uname"/>
     </resultMap>
+
+    <select id="selectUserid" parameterType="Integer" resultMap="userMap">
+        select *
+        from user
+        where uid=#{id}
+    </select>
     <select id="selectUser" parameterType="String" resultMap="userMap">
         select *
         from user

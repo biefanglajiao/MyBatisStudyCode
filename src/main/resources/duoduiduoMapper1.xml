@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="duoduiduoMapper1.xml">
+    <select id="findorderbyid" parameterType="Integer"  resultMap="orderwithproduct">
+        SELECT * FROM tb_order WHERE id=#{id}
+    </select>
+    <resultMap id="orderwithproduct" type="org.example.duoduiduo.Orders">
+        <id property="id" column="id"/>
+        <result property="number" column="number"/>
+<!--        商品信息的映射-->
+        <collection property="products" javaType="list" ofType="org.example.duoduiduo.Product"
+                    column="id"
+
+                    select="duoduiduoMapper2.xml.finproductbyid"        >
+
+        </collection>
+    </resultMap>
+
+
+    <!--        嵌套结果查询-->
+
+    <select id="findorderbyid2" resultMap="findorderbyid2" parameterType="Integer">
+        SELECT tb_order.*, product.* ,
+               tb_order.id oid,
+               product.id pid
+        FROM tb_order,
+             product,
+             ordersinfo
+        WHERE  tb_order.id=ordersinfo.orders_id
+          AND product.id =ordersinfo.product_id
+          AND tb_order.id=#{id}
+    </select>
+<resultMap id="findorderbyid2" type="org.example.duoduiduo.Orders">
+    <id property="id" column="oid"/>
+    <result property="number" column="number"/>
+    <collection property="products" javaType="list" ofType="org.example.duoduiduo.Product">
+        <id property="id" column="pid"/>
+        <result property="name" column="name"/>
+        <result property="price" column="price"/>
+    </collection>
+</resultMap>
+</mapper>

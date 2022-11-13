@@ -4,17 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="996d60b3-e11c-4de3-b56c-7797630e86ea" name="变更" comment="新增mybatis 中级&#10;关联映射一对一">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/yiduiyi/Card.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/yiduiyi/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/cardMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/personMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/第四章 关联映射与缓存.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c703c95b-959c-4c14-95a4-7510e39508d9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c703c95b-959c-4c14-95a4-7510e39508d9.xml" afterDir="false" />
+    <list default="true" id="996d60b3-e11c-4de3-b56c-7797630e86ea" name="变更" comment="新增mybatis 中级&#10;关联映射多对多">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/UserMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/textDi4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/一对一/textDi4.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/坑README.md" beforeDir="false" afterPath="$PROJECT_DIR$/坑README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/第四章 关联映射与缓存.md" beforeDir="false" afterPath="$PROJECT_DIR$/第四章 关联映射与缓存.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,27 +64,7 @@
       <recent name="D:\JAVA\学习代码\MyBatisStudyCode\src\main\java\org\example\yiduiyi" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Text.yiduiyi">
-    <configuration name="TestFirstDemo.SelectAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="MyBatisStudyCode" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestFirstDemo" />
-      <option name="METHOD_NAME" value="SelectAll" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestSecondDemo.foeeachselect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="MyBatisStudyCode" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestSecondDemo" />
-      <option name="METHOD_NAME" value="foeeachselect" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.一级缓存.duoduiduo">
     <configuration name="Text.yiduiyi" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MyBatisStudyCode" />
       <extension name="coverage">
@@ -105,11 +81,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="textDi4.yiduiyi" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="一级缓存.duoduiduo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MyBatisStudyCode" />
-      <option name="PACKAGE_NAME" value="一对一" />
-      <option name="MAIN_CLASS_NAME" value="一对一.textDi4" />
-      <option name="METHOD_NAME" value="yiduiyi" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="缓存机制.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="缓存机制" />
+      <option name="MAIN_CLASS_NAME" value="缓存机制.一级缓存" />
+      <option name="METHOD_NAME" value="duoduiduo" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -125,13 +107,45 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="text.duoduiduo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MyBatisStudyCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="多对多.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="多对多" />
+      <option name="MAIN_CLASS_NAME" value="多对多.text" />
+      <option name="METHOD_NAME" value="duoduiduo" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="text.duoduiduo2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MyBatisStudyCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="多对多.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="多对多" />
+      <option name="MAIN_CLASS_NAME" value="多对多.text" />
+      <option name="METHOD_NAME" value="duoduiduo2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.一级缓存.duoduiduo" />
+        <item itemvalue="JUnit.text.duoduiduo2" />
+        <item itemvalue="JUnit.text.duoduiduo" />
         <item itemvalue="JUnit.Text.yiduiyi" />
         <item itemvalue="JUnit.textDi4.yiduiyi1" />
-        <item itemvalue="JUnit.textDi4.yiduiyi" />
-        <item itemvalue="JUnit.TestFirstDemo.SelectAll" />
-        <item itemvalue="JUnit.TestSecondDemo.foeeachselect" />
       </list>
     </recent_temporary>
   </component>
@@ -167,7 +181,11 @@
       <workItem from="1667905859512" duration="5000" />
       <workItem from="1667908642795" duration="6000" />
       <workItem from="1667997982582" duration="168000" />
-      <workItem from="1667998234819" duration="5711000" />
+      <workItem from="1667998234819" duration="6105000" />
+      <workItem from="1668126444639" duration="3859000" />
+      <workItem from="1668346269005" duration="1126000" />
+      <workItem from="1668347670638" duration="2188000" />
+      <workItem from="1668349877787" duration="684000" />
     </task>
     <task id="LOCAL-00001" summary="新增mybatis的sqlsession方法 （对数据库的增删改查）">
       <created>1666621736356</created>
@@ -246,7 +264,28 @@
       <option name="project" value="LOCAL" />
       <updated>1667803343346</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="新增mybatis 中级&#10;关联映射一对多">
+      <created>1668004210233</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1668004210233</updated>
+    </task>
+    <task id="LOCAL-00013" summary="新增mybatis 中级&#10;关联映射一对多">
+      <created>1668004220717</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1668004220717</updated>
+    </task>
+    <task id="LOCAL-00014" summary="新增mybatis 中级&#10;关联映射多对多">
+      <created>1668347767997</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1668347767997</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -271,7 +310,9 @@
     <MESSAGE value="新增mybatis 的foreach循坏遍历查找&#10;foeeach标签里的元素有点多 得记住" />
     <MESSAGE value="新增mybatis 的foreach循坏遍历查找&#10;foeeach标签里的元素有点多 得记住对应在坑md" />
     <MESSAGE value="新增mybatis 中级&#10;关联映射一对一" />
-    <option name="LAST_COMMIT_MESSAGE" value="新增mybatis 中级&#10;关联映射一对一" />
+    <MESSAGE value="新增mybatis 中级&#10;关联映射一对多" />
+    <MESSAGE value="新增mybatis 中级&#10;关联映射多对多" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增mybatis 中级&#10;关联映射多对多" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="duoduiduoMapper2.xml">
+<select id="finproductbyid" parameterType="Integer" resultType="org.example.duoduiduo.Product" >
+    SELECT * FROM product WHERE id in(
+        SELECT product_id FROM ordersinfo WHERE orders_id=#{id})
+</select>
+
+
+</mapper>
