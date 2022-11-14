@@ -5,7 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03cc0ded-c1b6-48ad-b34c-a94573b9aa5a" name="变更" comment="一级缓存">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/domain/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/personMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/personMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/缓存机制/一级缓存.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/缓存机制/一级缓存.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/坑README.md" beforeDir="false" afterPath="$PROJECT_DIR$/坑README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/第四章 关联映射与缓存.md" beforeDir="false" afterPath="$PROJECT_DIR$/第四章 关联映射与缓存.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,23 +69,7 @@
       <recent name="D:\JAVA\学习代码\MyBatisStudyCode\src\main\java\org\example\yiduiyi" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.一级缓存.duoduiduo">
-    <configuration name="Text.yiduiyi" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="MyBatisStudyCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="一对多.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="一对多" />
-      <option name="MAIN_CLASS_NAME" value="一对多.Text" />
-      <option name="METHOD_NAME" value="yiduiyi" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.二级缓存.text">
     <configuration name="一级缓存.duoduiduo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MyBatisStudyCode" />
       <extension name="coverage">
@@ -95,11 +86,49 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="textDi4.yiduiyi1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="二级缓存.duoduiduo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MyBatisStudyCode" />
-      <option name="PACKAGE_NAME" value="一对一" />
-      <option name="MAIN_CLASS_NAME" value="一对一.textDi4" />
-      <option name="METHOD_NAME" value="yiduiyi1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="缓存机制.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="缓存机制" />
+      <option name="MAIN_CLASS_NAME" value="缓存机制.二级缓存" />
+      <option name="METHOD_NAME" value="duoduiduo" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="二级缓存.text" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MyBatisStudyCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="缓存机制.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="缓存机制" />
+      <option name="MAIN_CLASS_NAME" value="缓存机制.二级缓存" />
+      <option name="METHOD_NAME" value="text" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="一级缓存.text" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MyBatisStudyCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="缓存机制.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="缓存机制" />
+      <option name="MAIN_CLASS_NAME" value="缓存机制.一级缓存" />
+      <option name="METHOD_NAME" value="text" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -139,18 +168,18 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.二级缓存.text" />
+        <item itemvalue="JUnit.一级缓存.text" />
         <item itemvalue="JUnit.一级缓存.duoduiduo" />
         <item itemvalue="JUnit.text.duoduiduo2" />
         <item itemvalue="JUnit.text.duoduiduo" />
-        <item itemvalue="JUnit.Text.yiduiyi" />
-        <item itemvalue="JUnit.textDi4.yiduiyi1" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="默认任务">
-      <changelist id="996d60b3-e11c-4de3-b56c-7797630e86ea" name="变更" comment="" />
+      <changelist id="03cc0ded-c1b6-48ad-b34c-a94573b9aa5a" name="变更" comment="一级缓存" />
       <created>1666075303758</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -184,6 +213,9 @@
       <workItem from="1668346269005" duration="1126000" />
       <workItem from="1668347670638" duration="2188000" />
       <workItem from="1668349877787" duration="684000" />
+      <workItem from="1668351159415" duration="64000" />
+      <workItem from="1668407803540" duration="892000" />
+      <workItem from="1668408707713" duration="2676000" />
     </task>
     <task id="LOCAL-00001" summary="新增mybatis的sqlsession方法 （对数据库的增删改查）">
       <created>1666621736356</created>
@@ -283,7 +315,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668347767997</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="一级缓存">
+      <created>1668351214747</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1668351214748</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -310,7 +349,8 @@
     <MESSAGE value="新增mybatis 中级&#10;关联映射一对一" />
     <MESSAGE value="新增mybatis 中级&#10;关联映射一对多" />
     <MESSAGE value="新增mybatis 中级&#10;关联映射多对多" />
-    <option name="LAST_COMMIT_MESSAGE" value="新增mybatis 中级&#10;关联映射多对多" />
+    <MESSAGE value="一级缓存" />
+    <option name="LAST_COMMIT_MESSAGE" value="一级缓存" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -323,6 +363,15 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/缓存机制/一级缓存.java</url>
+          <line>19</line>
+          <properties class="缓存机制.一级缓存" method="text">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

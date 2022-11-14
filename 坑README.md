@@ -35,3 +35,5 @@ object类里的toString只是把字符串的直接打印，数字的要转化成
 ## xml标签是有先后顺序的  比如：
 ### <·configuration>中先后顺序必须为：
 (properties?,settings?,typeAliases?,typeHandlers?,objectFactory?,objectWrapperFactory?,reflectorFactory?,plugins?,environments?,databaseIdProvider?,mappers?)"
+
+<font color=red>除了查找语句其他操作要记得数据的提交！！！<br>sqlsession.commit(); 不然数据不会变 自然还是按照没有操作不会刷新缓存ps：  一级缓存不提交会刷新；二级不行</font>

@@ -5,6 +5,8 @@
 <configuration>
     <properties resource="db.properties"/>
     <settings>
+<!--        打开二级缓存全局配置-->
+        <setting name="cacheEnabled" value="true" />
         <!--        打开延迟加载开关-->
         <setting name="lazyLoadingEnabled" value="true"/>
         <!--        将积极加载改为消息加载，即按需加载-->
