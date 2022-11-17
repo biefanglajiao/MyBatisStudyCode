@@ -36,7 +36,7 @@ public class 一级缓存 {
             //其他修改
             System.out.println("*****************************其他修改--------------------------");
             int insert = sqlSession.insert("insert", "这是其他修改");
-            sqlSession.commit();
+            //sqlSession.commit();
             System.out.println("其他修改共修改了"+insert+"条数据");
 
             System.out.println("*****************************第三次查询--------------------------");

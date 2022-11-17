@@ -39,7 +39,7 @@ public class 二级缓存 {
             SqlSession sqlSession3=sqlSessionFactory.openSession();
             int insert = sqlSession3.insert("insert", "这是其他修改");
             System.out.println("其他修改共修改了"+insert+"条数据");
-            sqlSession3.commit();
+            //sqlSession3.commit();
             sqlSession3.close();
 
             System.out.println("*****************************第三次查询--------------------------");
@@ -56,7 +56,7 @@ public class 二级缓存 {
             user.setId(1);
             int update= sqlSession5.update("update",user);
             System.out.println("其他修改共修改了"+update+"条数据");
-            sqlSession5.commit();
+            //sqlSession5.commit();
             sqlSession5.close();
             System.out.println("*****************************第四次查询--------------------------");
             //第四次查询

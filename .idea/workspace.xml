@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="03cc0ded-c1b6-48ad-b34c-a94573b9aa5a" name="变更" comment="一级缓存">
+    <list default="true" id="03cc0ded-c1b6-48ad-b34c-a94573b9aa5a" name="变更" comment="二级缓存；差个小问题">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/domain/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/personMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/personMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/缓存机制/一级缓存.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/缓存机制/一级缓存.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/坑README.md" beforeDir="false" afterPath="$PROJECT_DIR$/坑README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/缓存机制/二级缓存.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/缓存机制/二级缓存.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/第四章 关联映射与缓存.md" beforeDir="false" afterPath="$PROJECT_DIR$/第四章 关联映射与缓存.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -134,6 +130,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="一级缓存.text" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MyBatisStudyCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="缓存机制.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="缓存机制" />
+      <option name="MAIN_CLASS_NAME" value="缓存机制.一级缓存" />
+      <option name="METHOD_NAME" value="text" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="text.duoduiduo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MyBatisStudyCode" />
       <extension name="coverage">
@@ -169,7 +181,6 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.二级缓存.text" />
-        <item itemvalue="JUnit.一级缓存.text" />
         <item itemvalue="JUnit.一级缓存.duoduiduo" />
         <item itemvalue="JUnit.text.duoduiduo2" />
         <item itemvalue="JUnit.text.duoduiduo" />
@@ -215,7 +226,11 @@
       <workItem from="1668349877787" duration="684000" />
       <workItem from="1668351159415" duration="64000" />
       <workItem from="1668407803540" duration="892000" />
-      <workItem from="1668408707713" duration="2676000" />
+      <workItem from="1668408707713" duration="2734000" />
+      <workItem from="1668425050276" duration="7000" />
+      <workItem from="1668477196767" duration="886000" />
+      <workItem from="1668643877213" duration="12000" />
+      <workItem from="1668655502501" duration="111000" />
     </task>
     <task id="LOCAL-00001" summary="新增mybatis的sqlsession方法 （对数据库的增删改查）">
       <created>1666621736356</created>
@@ -322,7 +337,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668351214748</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="二级缓存；差个小问题">
+      <created>1668411434650</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1668411434650</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -350,7 +372,8 @@
     <MESSAGE value="新增mybatis 中级&#10;关联映射一对多" />
     <MESSAGE value="新增mybatis 中级&#10;关联映射多对多" />
     <MESSAGE value="一级缓存" />
-    <option name="LAST_COMMIT_MESSAGE" value="一级缓存" />
+    <MESSAGE value="二级缓存；差个小问题" />
+    <option name="LAST_COMMIT_MESSAGE" value="二级缓存；差个小问题" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -363,15 +386,6 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/test/java/缓存机制/一级缓存.java</url>
-          <line>19</line>
-          <properties class="缓存机制.一级缓存" method="text">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
